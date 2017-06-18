@@ -1,0 +1,34 @@
+mixin gallery-item(src, title, subtitle)
+	div.main-gallery-item
+		.main-gallery-item__pr
+			img(src=src, alt=title, width="350", height="300")
+			.main-gallery-overlay.main-gallery-item__overlay
+				.main-gallery-overlay__container
+					.main-gallery-overlay__icon
+						span.i-gallery-icon
+					a.btn.btn_theme_orange.btn_size_sm.main-gallery-overlay__btn(href="#")
+						| Перейти в галерею
+		.main-gallery-item__divider
+		.main-gallery-item__title
+			| #{title}
+		.main-gallery-item__loc
+			| #{subtitle}
+.main-gallery
+	.container
+		.row
+			.col-xs-12
+				h2.text__h2.main-gallery__title
+					| Фотогалерея
+				p.text__p.main-gallery__p
+					| За время существования нашей строительной компании мы возвели огромное количество самых разных домов из бруса и бань в виде бочек. 
+					br
+					| В представленной ниже фотогалереи собраны фото самых красивых домов, построенных по популярным типовым проектам.
+				.clearfix
+					.row
+						.main-gallery__items
+							+gallery-item("images/gallery-1.jpg", "Дом из бруса 6х6 под ключ", "Московская область, Руза")
+							+gallery-item("images/gallery-2.jpg", "Баня бочка 2х5м", "Московская область, Ногинск")
+							+gallery-item("images/gallery-3.jpg", "Дом из бруса 6х6 под ключ", "Московская область, Руза")
+						.btn__wrap.btn__wrap_align_center
+						a.btn.btn_size_sm.btn_theme_green.main-info__btn(href="#")
+							| ПОКАЗАТЬ БОЛЬШЕ ФОТОГРАФИЙ

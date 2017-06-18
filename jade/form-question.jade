@@ -1,0 +1,45 @@
+.form-question
+	.container
+		.row
+			.col-xs-12
+				h2.text__h2.form-question__title
+					| Остались вопросы?
+		.row
+			.col-xs-12.col-sm-6.col-md-8
+				form(action="#")
+					.form-question__form.form-grid
+						.form-grid__column
+							input.field.form-grid__item.field_theme_green.field_size_md(type="text", placeholder="Имя")
+							input.field.form-grid__item.field_theme_green.field_size_md(type="text", placeholder="E-mail")
+							input.field.form-grid__item.field_theme_green.field_size_md(type="text", placeholder="Телефон")
+						.form-grid__column
+							textarea.field.field_theme_green.field_avaible.field_resize_false.field_stretch.form-question__textarea(placeholder="Текст сообщения")
+					.btn__wrap.btn__wrap_align_right
+						a.btn.btn_size_sm.btn_theme_green.form-question__submit(href="#")
+							| отправить
+			.col-xs-12.col-sm-6.col-md-4
+				.form-question__contacts
+					.phone__wrap.form-question__contacts-item
+						.phone__title
+							| Телефон в Москве
+						a.phone.phone_size_lg.form-question__phone(href="tel:89318548797")
+							| 8 
+							span.phone__code
+								| 931
+							|  854 87 97
+					.phone__wrap.form-question__contacts-item
+						.phone__title
+							| Телефон в Санкт-Петербурге
+						a.phone.phone_size_lg.form-question__phone(href="tel:89318548797")
+							| 8 
+							span.phone__code
+								| 931
+							|  854 87 97
+					.phone__wrap.form-question__contacts-item
+						.phone__title
+							| Телефон в Великом Новгороде
+						a.phone.phone_size_lg.form-question__phone(href="tel:89318548797")
+							| 8 
+							span.phone__code
+								| 931
+							|  854 87 97

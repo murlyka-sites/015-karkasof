@@ -1,0 +1,21 @@
+mixin articles-item(src, title, subtitle)
+	div.articles-item
+		.articles-item__pr
+			img.img-responsive(src=src, alt=title, width="300", height="241")
+		.articles-item__divider
+		.articles-item__title
+			| #{title}
+		a.btn.btn_size_sm.btn_theme_green.articles-item__btn(href="#")
+			| Подробнее
+.articles
+	.container
+		.row
+			.col-xs-12
+				h2.text__h2.articles__title
+					| Услуги компании СК «Каркасоф» \ Статьи
+				.clearfix
+					.row
+						.articles__items
+							+articles-item("images/articles-1.jpg", "Строительство домов")
+							+articles-item("images/articles-2.jpg", "Строительство Бань")
+							+articles-item("images/articles-3.jpg", "Строительство Коттеджей")

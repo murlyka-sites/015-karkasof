@@ -1,0 +1,110 @@
+.project-filter
+	.container
+		.row
+			.col-xs-12
+				h2.text__h2.project-filter__title
+					| Дома из бруса с мансардой
+				.project-filter__tags.tags-filter
+					.tags-filter__tag
+						| 6x4
+						input.hidden(type="checkbox")
+					.tags-filter__tag
+						| 6x6
+						input.hidden(type="checkbox")
+					.tags-filter__tag
+						| 6x8
+						input.hidden(type="checkbox")
+					.tags-filter__tag
+						| 6x10
+						input.hidden(type="checkbox")
+					.tags-filter__tag
+						| 6x12
+						input.hidden(type="checkbox")
+					.tags-filter__tag
+						| До 100 м2
+						input.hidden(type="checkbox")
+					.tags-filter__tag
+						| Маленькие
+						input.hidden(type="checkbox")
+					.tags-filter__tag
+						| Два этажа
+						input.hidden(type="checkbox")
+					.tags-filter__tag
+						| Недорогие
+						input.hidden(type="checkbox")
+				.project-filter__settings.filter-settings
+					.filter-settings__grid
+						.filter-settings__column.filter-settings__column_type_range
+							.filter-settings__column-title
+								| Цена
+							.filter-settings__range-fields
+								.filter-settings__range-fields-group
+									.filter-settings__range-fields-group-text
+										| от
+									input.filter-settings__range-fields-group-field.filter-settings__range-fields-group-field-from.filter-settings__range-fields-group-field-from-price(type="number")
+								.filter-settings__range-fields-group
+									.filter-settings__range-fields-group-text
+										| до
+									input.filter-settings__range-fields-group-field.filter-settings__range-fields-group-field-to.filter-settings__range-fields-group-field-to-price(type="number")
+							input.filter-settings__range-price(type="text")
+						.filter-settings__column.filter-settings__column_type_range
+							.filter-settings__column-title
+								| Площадь м
+								sup
+									| 2
+							.filter-settings__range-fields
+								.filter-settings__range-fields-group
+									.filter-settings__range-fields-group-text
+										| от
+									input.filter-settings__range-fields-group-field.filter-settings__range-fields-group-field-from.filter-settings__range-fields-group-field-from-area(type="number")
+								.filter-settings__range-fields-group
+									.filter-settings__range-fields-group-text
+										| до
+									input.filter-settings__range-fields-group-field.filter-settings__range-fields-group-field-to.filter-settings__range-fields-group-field-to-area(type="number")
+							input.filter-settings__range-area(type="text")
+
+						.filter-settings__column.filter-settings__column_type_checkbox
+							.filter-settings__column-title
+								| Дополнительные параметры
+							.filter-settings__checkbox-grid
+								.filter-settings__checkbox-column
+									.filter-settings__checkbox-item
+										input.custom.filter-settings__checkbox-input(type="checkbox") 
+										| Эркер
+									.filter-settings__checkbox-item
+										input.custom.filter-settings__checkbox-input(type="checkbox") 
+										| Балкон
+								.filter-settings__checkbox-column
+									.filter-settings__checkbox-item
+										input.custom.filter-settings__checkbox-input(type="checkbox") 
+										| Мансарда
+									.filter-settings__checkbox-item
+										input.custom.filter-settings__checkbox-input(type="checkbox") 
+										| Санузел
+								.filter-settings__checkbox-column
+									.filter-settings__checkbox-item
+										input.custom.filter-settings__checkbox-input(type="checkbox") 
+										| Терраса
+									.filter-settings__checkbox-item
+										input.custom.filter-settings__checkbox-input(type="checkbox") 
+										| Вернанда
+				p.text__p.project-filter__p
+					| Современные деревянные дома и бани из бруса всё больше привлекают внимание дачников и хозяев загородных участков. Соответствие самым высоким требованиям безопасности, экологическая чистота материалов — то, что отличает деревянные дома и бани от любых других построек. Это, а также качество и долговечность, кстати говоря, недорогой недвижимости из бруса заставляет людей задуматься о её покупке. Дома и бани из бруса под ключ приобретают всё большую популярность. Наши проекты - это тёплые, уютные деревянные дома, которые становятся любимым местом отдыха дачников как летом, так и зимой, а бани из бруса — неотъемлемым атрибутом здорового и приятного образа жизни.
+				.filter-sorts
+					.filter-sorts__column.filter-sorts__column_align_left
+						.filter-sorts__text
+							| Сортировать:
+						.filter-sorts__criteria
+							| По цене
+						.filter-sorts__criteria.filter-sorts__criteria_active.filter-sorts__criteria_order_desc
+							| По популярности
+						.filter-sorts__criteria
+							| По рейтингу
+					.filter-sorts__column.filter-sorts__column_align_right
+						select.filter-sorts__count-view
+							option
+								| Показывать: 24
+								i-select-arrow
+							option
+								| Показывать: 36
+

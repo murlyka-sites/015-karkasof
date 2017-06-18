@@ -1,0 +1,34 @@
+nav.nav
+	.container
+		.row
+			.col-xs-12.col-sm-4.col-sm-push-8
+				form.nav__search(action="#")
+					.nav-top__icon.nav-icon
+						span
+						span
+						span
+					input.nav__search-field(type="text", placeholder="Поиск")
+					button.nav__search-submit
+						span.i-nav-search
+			.col-xs-12.col-sm-8.col-sm-pull-4
+				ul.nav__list.nav-top
+					li.nav-top__item
+						a.nav-top__link(href="#")
+							| О компании
+					li.nav-top__item
+						a.nav-top__link(href="#")
+							| Проекты
+					li.nav-top__item
+						a.nav-top__link(href="#")
+							| Услуги
+					li.nav-top__item
+						a.nav-top__link.nav-top__link_action.nav-top__link_icon_action(href="#")
+							//- .nav-top__link-icon
+								span.i-nav-action
+							| Акции
+					li.nav-top__item
+						a.nav-top__link(href="#")
+							| Галерея 
+					li.nav-top__item
+						a.nav-top__link(href="#")
+							| Контакты

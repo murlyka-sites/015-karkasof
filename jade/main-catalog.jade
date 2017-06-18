@@ -1,0 +1,104 @@
+mixin catalog-item
+	.catalog-item
+		.catalog-item-active.catalog-item__active
+			.catalog-item-active__title
+				| Дом из бруса 5 х 7,5 м «Норвегия»
+			.catalog-item-active__char-grid
+				.catalog-item-active__char-item
+					.catalog-item-active__char-icon
+						span.i-char-active-area
+					.catalog-item-active__char-title
+						| 152 М
+						sup
+							| 2
+				.catalog-item-active__char-item
+					.catalog-item-active__char-icon
+						span.i-char-active-type
+					.catalog-item-active__char-title
+						| Дачный дом
+				.catalog-item-active__char-item
+					.catalog-item-active__char-icon
+						span.i-char-active-term
+					.catalog-item-active__char-title
+						| 20 дней
+			a.btn.btn_theme_orange.btn_size_sm.catalog-item__btn(href="#")
+				| Подробно о проекте
+		.catalog-item__pr
+			.catalog-item__tags.tags-item.tags-item_align_left
+				.tags-item__tag.tags-item__tag_theme_green.tags-item__tag_size_sm.tags-item__tag_catalog_price.tags-item__tag_corner_left-green
+					| 340 000 
+					span.line-through
+						| P
+				.tags-item__tag.tags-item__tag_theme_orange.tags-item__tag_icon
+					span.i-tag-item-camera
+				.tags-item__tag.tags-item__tag_theme_red.tags-item__tag_uppercase
+					span.tags-item__icon
+						span.i-action
+					| Акция!
+			img(src="images/catalog-item.jpg", alt="Дом из бруса", width="370", height="225")
+		.catalog-item__info
+			.catalog-item__title
+				| Дом из бруса 5х7,5м «Норвегия»
+			.catalog-item__rub
+				span.catalog-item__rub-text
+					| ХАРАКТЕРИСТИКИ ПРОЕКТА
+			.catalog-item__char-grid
+				.catalog-item__char-column
+					.catalog-item__char-item
+						.catalog-item__char-icon
+							span.i-char-area
+						.catalog-item__char-text
+							.catalog-item__char-title
+								| Площадь дома
+							.catalog-item__char-desc
+								| 152 м
+								sup
+									| 2
+					.catalog-item__char-item
+						.catalog-item__char-icon
+							span.i-char-floor
+						.catalog-item__char-text
+							.catalog-item__char-title
+								| Этажность
+							.catalog-item__char-desc
+								| 1 этаж
+				.catalog-item__char-column
+					.catalog-item__char-item
+						.catalog-item__char-icon
+							span.i-char-type
+						.catalog-item__char-text
+							.catalog-item__char-title
+								| Тип постройки
+							.catalog-item__char-desc
+								| Дачный дом
+					.catalog-item__char-item
+						.catalog-item__char-icon
+							span.i-char-term
+						.catalog-item__char-text
+							.catalog-item__char-title
+								| Срок строит-ва 
+							.catalog-item__char-desc
+								| 20 дней
+			a.btn.btn_theme_green.btn_size_sm.catalog-item__btn(href="#")
+				| Подробно о проекте
+
+.catalog.main-catalog
+	.container
+		.row
+			.col-xs-12
+				h2.catalog__title
+					| Деревянные дома: проекты и цены под ключ
+		.row
+			.col-sm-6.col-lg-4
+				+catalog-item
+			.col-sm-6.col-lg-4
+				+catalog-item
+			.col-sm-6.col-lg-4
+				+catalog-item
+			.col-sm-6.col-lg-4
+				+catalog-item
+			.col-sm-6.col-lg-4
+				+catalog-item
+			.col-sm-6.col-lg-4
+				+catalog-item
+
